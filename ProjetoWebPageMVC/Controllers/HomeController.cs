@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProjetoWebPageMVC.Models;
+using ProjetoWebPageMVC.Models.ViewModels;
 using System.Diagnostics;
 
 namespace ProjetoWebPageMVC.Controllers
