@@ -9,11 +9,15 @@ namespace ProjetoWebPageMVC.Data
 {
     public class ProjetoWebPageMVCContext : DbContext
     {
-        public ProjetoWebPageMVCContext (DbContextOptions<ProjetoWebPageMVCContext> options)
+        public ProjetoWebPageMVCContext(DbContextOptions<ProjetoWebPageMVCContext> options)
             : base(options)
         {
+
         }
 
         public DbSet<ProjetoWebPageMVC.Models.Department> Department { get; set; } = default!;
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> SalesRecord { get; set; }
+
     }
 }
