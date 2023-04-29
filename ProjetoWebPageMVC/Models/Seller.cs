@@ -51,9 +51,10 @@ namespace ProjetoWebPageMVC.Models
             return Sales.Where(sr => sr.Date >= initial && sr.Date <= final).Sum(sr => sr.Amount);
         }
 
-        internal double TotalSales(DateTime initial, DateTime final)
+        public double TotalSales(DateTime initial, DateTime final)
         {
-            throw new NotImplementedException();
+            return Sales.Where(sale => sale.Date >= initial && sale.Date <= final)
+                        .Sum(sale => sale.Amount);
         }
     }
 }
