@@ -11,10 +11,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ProjetoWebPageMVCContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ProjetoWebPageMVCContext") ?? throw new InvalidOperationException("Connection string 'ProjetoWebPageMVCContext' not found.")));
 
-// Add services to the container.
+// Add dependecy injection
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<SellerService>();
 builder.Services.AddScoped<DepartmentService>();
+builder.Services.AddScoped<SalesRecordService>();
 
 
 var app = builder.Build();
