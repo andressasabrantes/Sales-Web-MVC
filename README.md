@@ -7,6 +7,7 @@ A web-based system that allows users to register departments and salespeople, ge
 ## DEPARTMENTS
 Departments: In this topic, the system allows users to create, edit, view details, and delete departments. This enables the organization of sales by department and helps identify areas of higher or lower performance.
 
+
 ![2](https://user-images.githubusercontent.com/87620436/236270418-5c092c6b-24ad-4170-ad62-91efcb4bcb7a.png)
 ![3](https://user-images.githubusercontent.com/87620436/236270457-5961f6e4-b21c-4e3e-a07b-ff4c2f2cade5.png)
 ![edit](https://user-images.githubusercontent.com/87620436/236270503-01ffa8ba-0864-4408-a662-7c0c06113f55.png)
